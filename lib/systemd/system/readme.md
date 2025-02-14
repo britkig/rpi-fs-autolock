@@ -1,7 +1,7 @@
 # Notes
 - This package assumes that the root is not configured to automatically mount any partitions as writable, which is the default behaviour of the Linux kernel, as well as that scripts or no other package aims to achieve the same result.
 - Services in this repository are not meant to be started and stopped manually, thus having `RefuseManualStart`, `RefuseManualStop` and `StopWhenUnneeded` all set to `true` in their `[Service]` sections. Addditional mounts can be managed/chained, but must also specify these three directives to ensure correct remounting timings.
-## `firmware-rw.service` (`/boot/firwmare`)
+## `firmware-rw.service` (`/boot/firmware`)
 Manages the Raspberry Pi's boot partition.
 
 Pulled in by `system-rw.service`.
