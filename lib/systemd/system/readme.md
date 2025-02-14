@@ -5,7 +5,7 @@ Manages the Raspberry Pi's boot partition. Pulled in by `system-rw.service`.
 Manages the Raspberry Pi's root partition, pulled in by `system-rw.service`.
 
 ## `system-rw.service`
-Virtual service for grouping managedsystem mounts, pulled in when `all-rw.service` is started. `RequiredBy` dependencies added so that it can be integrated into APT's timer tasks.
+Virtual service for grouping managed mounts essential to correct system functioning. Pulled in when `all-rw.service` is started. `RequiredBy` dependencies added so that it can be integrated into APT's timer tasks.
 
 ## `all-rw.service`
 Virtual service for all managed mounts.
